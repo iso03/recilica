@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button auto-hide="false" slot="end"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup-call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="success">
+      <ion-title size="large">Pickup-call</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <img src="./assets/img/cap.png" alt="Cap skirring">
+  <ion-card>
+    <ion-card-content>
+      <p>adresse: Cap skirring, cap centre</p>
+      <p>Complement: Diallo Counda</p>
+      <p>Neighbord: Kairo</p>
+      <p>Zip code: 1215464</p>
+      <p>City name - state: Cap skirring - Sénégal</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-label position="floating">Notes</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="full" color="success">Create pickup call</ion-button>
+</ion-content>
