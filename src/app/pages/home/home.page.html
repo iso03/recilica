@@ -1,3 +1,4 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar color="success">
     <ion-buttons slot="start">
@@ -24,31 +25,12 @@
       </ion-label>
     </ion-item>
   </ion-list>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
-        <ion-label>
-          On hold
-          <p>21/04/2023 19:58:00</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>created at 21/04/2023</p>
-          <p>
-            Notes: we have two bags that are full, 
-            one with plastic and the other with glasses
-          </p>
-        </ion-label>
-      </ion-item>
-      <ion-button color="success" fill="clear" size="full">See all...</ion-button>
-    </ion-card-content>
-  </ion-card>
+  <app-pickup-call-card status="Hold" 
+    updateAt="21/04/2023" createAt="20/04/2023" 
+    notes="we have two bags that are full, one with plastic and the other with glasses" 
+    [hasFooter]="true" [hasHeader]="true">
+  </app-pickup-call-card>
+  
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="success">
       <ion-icon name="add"></ion-icon>
